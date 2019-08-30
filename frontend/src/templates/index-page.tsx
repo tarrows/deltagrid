@@ -1,5 +1,6 @@
 import * as React from 'react'
+import MyFirstGrid from '../components/MyFirstGrid'
 
-const IndexPage: React.FC = () => <h1>Hello, Parcel!</h1>
+const IndexPage: React.FC = () => <MyFirstGrid />
 
 export default IndexPage
