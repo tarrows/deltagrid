@@ -10,9 +10,9 @@ const MyFirstGrid: React.FC = () => {
   return (
     <GridLayout className={'layout'} layout={layout}
       cols={12} rowHeight={30} width={1200}>
-      <div key="a">a</div>
-      <div key="b">b</div>
-      <div key="c">c</div>
+      <div key="a" style={{ backgroundColor: '#ddd' }}>a</div>
+      <div key="b" style={{ backgroundColor: '#f00' }}>b</div>
+      <div key="c" style={{ backgroundColor: '#00f' }}>c</div>
     </GridLayout>
   )
 }
