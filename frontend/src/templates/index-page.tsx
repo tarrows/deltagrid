@@ -1,6 +1,6 @@
 import * as React from 'react'
-import MyFirstGrid from '../components/MyFirstGrid'
+import GridWithMUI from '../components/GridWithMUI'
 
-const IndexPage: React.FC = () => <MyFirstGrid />
+const IndexPage: React.FC = () => <GridWithMUI />
 
 export default IndexPage
