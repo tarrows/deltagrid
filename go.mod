@@ -1,3 +1,3 @@
-module github.com/tarrows/deltagrid
+module deltagrid
 
 go 1.13
