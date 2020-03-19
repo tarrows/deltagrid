@@ -27,3 +27,23 @@ export const SocketProvider: React.FC = ({ children }) => {
   )
 }
 
+export const useSocket = (
+  on: (socket: SocketIOClient.Socket) => void,
+  off: (socket: SocketIOClient.Socket) => void
+) => {
+  const { socket } = React.useContext(SocketContext)
+
+  React.useEffect(() => {
+    if (socket) {
+      on(socket)
+    }
+
+    return () => {
+      if (socket) {
+        off(socket)
+      }
+    }
+  }, [socket])
+}
+
+export default useSocket
